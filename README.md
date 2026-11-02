@@ -7,6 +7,7 @@ A small, private, browser-only slideshow player. Pick a folder of pictures and v
 - Full screen player; move the mouse (or tap) to reveal controls, they hide after 3 seconds
 - Now playing card with cover art, title, artist, seek, previous/next track, volume
 - Shuffle or sequential, 3/5/10/20 seconds per picture, fit or fill, slow zoom
+- Smooth cross-fade with a blurred backdrop; mixing portrait and landscape pictures never shows the previous picture behind the new one
 - Videos play to the end; their sound can duck the music
 - Remembers the last folders (Chromium browsers; one click to re-grant access)
 - English and Turkish UI

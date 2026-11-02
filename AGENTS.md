@@ -46,6 +46,7 @@ A browser-only slideshow player. The user picks a media folder (pictures and vid
 - Object URLs must always be revoked when no longer shown.
 - Video sound ducks the music to 15 percent.
 - Keyboard: Space, arrows, N/P, M, S, F, Esc.
+- Slide transition: the newest layer (class `fs-fade`) has an opaque black background and fades in over the previous layer. Do not make it transparent, or the previous picture shows through the blurred backdrop when orientations differ.
 
 ## Commands
 
@@ -65,4 +66,4 @@ Pushing to `main` runs the Pages workflow. One-time setup: repository Settings, 
 - HEIC and some codecs (for example MKV) are not playable in browsers and are skipped.
 - Dropping a folder works only in Chromium browsers.
 
-Last reviewed: initial version.
+Last reviewed: fixed previous picture showing through the blurred backdrop (opaque top layer).

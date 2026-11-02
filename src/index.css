@@ -24,7 +24,9 @@ body {
   from { width: 0; }
   to { width: 100%; }
 }
-.fs-fade { animation: fs-fade 0.9s ease both; }
+/* The newest slide layer is opaque black, so the previous picture never shows
+   through the blurred backdrop (portrait after landscape and vice versa). */
+.fs-fade { background: #000; animation: fs-fade 0.9s ease both; }
 .fs-zoom { animation-name: fs-zoom; animation-timing-function: linear; animation-fill-mode: both; }
 .fs-progress { animation-name: fs-progress; animation-timing-function: linear; animation-fill-mode: both; }
 
