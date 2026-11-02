@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #07070c;
+  color: #fff;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+@keyframes fs-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fs-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+@keyframes fs-progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+.fs-fade { animation: fs-fade 0.9s ease both; }
+.fs-zoom { animation-name: fs-zoom; animation-timing-function: linear; animation-fill-mode: both; }
+.fs-progress { animation-name: fs-progress; animation-timing-function: linear; animation-fill-mode: both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fs-fade, .fs-zoom { animation: none; }
+}
